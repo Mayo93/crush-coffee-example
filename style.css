@@ -1,0 +1,375 @@
+/*
+1. Reset
+2. Style globalne
+3. Typografia
+4. Kompomenty
+5. Naglowek
+6. Style glownych sekcji
+7. Stopka
+*/
+
+/*
+1. Reset
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+2. Style globalne
+*/
+
+body {
+	font-family: 'Marck Script', cursive;
+	color: #55392c;
+	font-weight: 400;
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+section {
+	text-align: center;
+	padding: 0 10%;
+}
+
+/*
+3. Typografia
+*/
+
+p {
+	font-size: 14px;
+	line-height: 1.6;
+}
+
+@media screen and (min-width: 1024px) {
+	p {
+		font-size: 18px;
+	}
+}
+
+/*
+4. Komponenty
+*/
+
+#header-logo {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+}
+
+@media screen and (min-width: 1024px) {
+	#header-logo {
+	height: 100px;
+	}
+	#header-logo img {
+	height: 100px;
+	width: 260px;
+
+	}
+}
+
+#header-main {
+	height: 430px;
+	background: url('images/tlo2.jpg');
+	background-size: cover;
+	text-align: center;
+	margin-bottom: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#header-main h2 {
+	font-size: 60px;
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+}
+
+#header-main p {
+	font-size: 24px;
+	color: white;
+	text-align: center;
+}
+
+#header-button {
+	margin-top: 200px;
+}
+
+#header-button a {
+	font-family: 'Courgette', cursive;
+	border: 2px solid white;
+	color: white;
+	border-radius: 10px;
+	padding: 20px;
+	font-weight: bold;
+}
+
+@media screen and (min-width: 1024px) {
+	#header-main {
+		height: 530px;
+		margin-bottom: 0.5px;
+	}
+
+	#header-main h2 {
+		padding-top: 90px;
+		font-size: 78px;
+	}
+
+	#header-main p {
+		padding-top: 50px;
+		font-size: 34px;
+	}
+
+	#header-button {
+	margin-top: 90px;
+	}
+
+	#header-button a:hover {
+	background-color: #55392c;
+	}
+}
+/*
+5. Nagłówek
+*/
+
+header {
+	text-align: center;
+	background-color: #F4F3EF;
+}
+
+/*
+6. Style głównych sekcji
+*/
+
+nav {
+	text-align: center;
+	font-family: 'Courgette', cursive;
+	color: #33190a;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+
+}
+nav li {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 20px;
+	border-radius: 15px;
+	box-sizing: border-box;
+	font-weight: bold;
+	border-bottom: 2px solid #33190a;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+	color: #33190a;
+}
+
+@media screen and (min-width: 1024px) {
+	nav {
+		width: 100%;
+	}
+	nav ul {
+		border: 2px solid #55392c;
+		height: 85px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		background-color: #F4F3EF;
+
+	}
+	nav li {
+		display: inline-block;
+		padding-bottom: 10px;
+		padding-top: 10px;
+		padding-left: 80px;
+		padding-right:80px;
+		border-bottom: none;
+	
+		margin-top: 20px;
+		margin-bottom: 20px;
+		border: 2px solid #55392c;
+
+
+	}
+
+	nav li:hover {
+		color: white;
+		background-color: #55392c;
+	}
+
+
+}
+@media screen and (min-width: 1024px) {
+	#section-first img {
+		width: 50%;
+		height: 50%;
+		animation:fade 1s infinite;
+		animation-duration: 1.6s;
+		animation-delay: 0.5s;
+		border-radius: 20px;
+		border: 2px solid #55392c;
+	}
+
+	@keyframes fade
+	{
+		  0%   {opacity:1}
+		  33.333% { opacity: 2}
+		  66.666% { opacity: 0}
+		  100% { opacity: 1}
+	}
+
+}
+
+main {
+	margin-top: 10px;
+	font-family: 'Courgette', cursive;
+	background-color: #F4F3EF;
+	color: #33190a;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+#section-first h2 {
+	font-size: 36px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#section-second {
+	margin-top: 10px;
+	
+}
+
+#section-second img {
+	width: 50%;
+	height: 50%;
+}
+#section-second h2 {
+	margin-top: 20px;
+	font-size: 36px;
+}
+
+#section-second p {
+	margin-top: 5px;
+	font-size: 18px;
+	text-align: justify;
+	margin-bottom: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+	#section-second-paragraphs {
+	border: 2px solid #55392c;
+	padding-right: 15px;
+	padding-left: 15px;
+	border-radius: 20px;
+	}
+}
+
+#section-third {
+	margin-top: 10px;
+	background-image: url('images/section-background.jpg');
+	background-size: cover;
+	color: #55392c;
+	padding-bottom: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#section-third img {
+	padding-top: 10%;
+	width: 30%;
+	height: 30%;
+}
+
+
+#section-newsletter {
+	margin-top: 20px;
+	font-weight: bold;
+}
+
+#section-newsletter p {
+	font-size: 18px;
+}
+
+#section-newsletter button {
+	font-family: 'Courgette', cursive;
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 32px;
+	border: 2px solid #55392c;
+	color: #55392c;
+	padding: 8px;
+	background-color: #F4F3EF;
+	border-radius: 10px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#section-media {
+	margin-top: 25px;
+}
+
+#section-media img {
+	width: 55px;
+	height: 55px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+}
+
+
+
+footer {
+	font-weight: bold;
+	background-color: #F4F3EF;
+	text-align: center;
+	font-size: 22px;
+	padding: 2%;
+}
